@@ -52,9 +52,9 @@ ListNode* make_list(const vector<int>& nums) {
 
 // Print a list
 void print_list(ListNode* head) {
-    while (head) {
-        cout << head->val << " ";
+    while (head->next) {
+        cout << head->val << "->";
         head = head->next;
     }
-    cout << endl;
+    cout << head->val << endl;
 }
